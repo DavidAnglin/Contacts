@@ -17,6 +17,7 @@
 		2E0FED3E1ECEAA0B005AC958 /* ContactListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FED3D1ECEAA0B005AC958 /* ContactListController.swift */; };
 		2E0FED401ECEAA28005AC958 /* ContactDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FED3F1ECEAA28005AC958 /* ContactDetailController.swift */; };
 		2E0FED421ED7E933005AC958 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FED411ED7E933005AC958 /* ContactCell.swift */; };
+		2E2C71901EE126FD00035C82 /* ContactDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C718F1EE126FD00035C82 /* ContactDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2E0FED3D1ECEAA0B005AC958 /* ContactListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListController.swift; sourceTree = "<group>"; };
 		2E0FED3F1ECEAA28005AC958 /* ContactDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailController.swift; sourceTree = "<group>"; };
 		2E0FED411ED7E933005AC958 /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		2E2C718F1EE126FD00035C82 /* ContactDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		2E0FED361ECEA87F005AC958 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C718F1EE126FD00035C82 /* ContactDataSource.swift */,
 				2E0FED371ECEA88B005AC958 /* ContactsDB.plist */,
 				2E0FED391ECEA900005AC958 /* PListLoader.swift */,
 				2E0FED3B1ECEA95E005AC958 /* Contact.swift */,
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E0FED421ED7E933005AC958 /* ContactCell.swift in Sources */,
+				2E2C71901EE126FD00035C82 /* ContactDataSource.swift in Sources */,
 				2E0FED3C1ECEA95E005AC958 /* Contact.swift in Sources */,
 				2E0FED401ECEAA28005AC958 /* ContactDetailController.swift in Sources */,
 				2E0FED1F1ECEA41C005AC958 /* AppDelegate.swift in Sources */,

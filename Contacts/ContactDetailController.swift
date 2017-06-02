@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol ContactDetailControllerDelegate: class {
+    func didMarkAsFavoriteContact(_ contact: Contact)
+}
+
 class ContactDetailController: UITableViewController {
     
     // MARK: - Stored Properties -
     var contact: Contact?
+    weak var delegate: ContactDetailControllerDelegate?
     
     // MARK: - IBOutlets -
     @IBOutlet weak var profileView: UIImageView!
@@ -22,6 +27,12 @@ class ContactDetailController: UITableViewController {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var stateLabel: UILabel!
     @IBOutlet weak var zipCodeLabel: UILabel!
+    
+    // MARK: - IBActions -
+    @IBAction func markAsFavorite(_ sender: Any) {
+        guard let contact = contact else { return }
+        delegate?.didMarkAsFavoriteContact(contact)
+    }
     
     // MARK: - View Controller Lifecycle -
     override func viewDidLoad() {
